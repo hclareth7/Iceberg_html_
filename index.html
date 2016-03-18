@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Iceberg (Iniciar sesiòn)</title>
+   <meta name="description" content="">
+
+   <!-- FONTS-->
+   <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
+   <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+   <!-- ESTILO-->
+   <link rel="stylesheet" type="text/css" href="css/theme.css">
+   <link rel="stylesheet" type="text/css" href="css/forms.css">
+   <link rel="stylesheet" type="text/css" href="css/miestilo.css">
+
+   <!-- ICONO-->
+   <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+   <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="utility-page sb-l-c sb-r-c">
+   <!-- -------------- Body Wrap  -------------- -->
+   <header id="topbar" class="alt">
+      <div class="topbar-left">
+         <ol class="breadcrumb">
+            <li class="breadcrumb-icon">
+               <a href="#">
+                  <span class="fa fa-home"></span>
+               </a>
+            </li>
+            <li class="breadcrumb-active">
+               <a href="#">ICEBERG</a>
+            </li>
+            <li class="breadcrumb-link">
+               <a>Ficha de Informaciòn</a>
+            </li>
+         </ol>
+      </div>
+      <div class="topbar-right">
+         <div class="ml15 ib va-m" id="sidebar_right_toggle">
+            <div class="navbar-btn btn-group btn-group-number mv0">
+               <button class="btn btn-sm btn-default btn-bordered prn pln">
+                  <i class="fa fa-bar-chart fs22 text-default"></i>
+               </button>
+               <button class="btn btn-primary btn-sm btn-bordered hidden-xs"> 3</button>
+            </div>
+         </div>
+      </div>
+   </header>
+
+
+   <section id="content" class="animated fadeIn">
+
+      <div class="mw1000 center-block">
+
+         <!-- -------------- Wizard -------------- -->
+
+         <!-- -------------- Spec Form -------------- -->
+         <div class="allcp-form">
+
+            <form method="post" action="http://alliance-html.themerex.net/" id="form-wizard">
+               <div class="wizard steps-bg steps-left">
+
+                  <!-- -------------- step 1 -------------- -->
+                  <h4 class="wizard-section-title">
+                                <i class="fa fa-user pr5"></i> Datos del beneficiario</h4>
+                  <section class="wizard-section">
+
+                     <div class="section">
+                        <label for="username" class="field-label">First Name</label>
+                        <label for="firstname" class="field prepend-icon">
+                           <input type="text" name="firstname" id="firstname" class="gui-input" placeholder="First name...">
+                           <label for="firstname" class="field-icon">
+                              <i class="fa fa-user"></i>
+                           </label>
+                        </label>
+                     </div>
+                     <!-- -------------- /section -------------- -->
+
+                     <div class="section">
+                        <label for="username" class="field-label">Last Name</label>
+                        <label for="lastname" class="field prepend-icon">
+                           <input type="text" name="lastname" id="lastname" class="gui-input" placeholder="Last name...">
+                           <label for="lastname" class="field-icon">
+                              <i class="fa fa-user"></i>
+                           </label>
+                        </label>
+                     </div>
+                     <!-- -------------- /section -------------- -->
+
+                  </section>
+
+                  <!-- -------------- step 2 -------------- -->
+                  <h4 class="wizard-section-title">
+                                <i class="fa fa-user-secret pr5"></i> Login details</h4>
+                  <section class="wizard-section">
+
+                     <div class="section">
+                        <label for="username" class="field-label">Username</label>
+
+                        <div class="smart-widget">
+                           <label for="username" class="field prepend-icon">
+                              <input type="text" name="username" id="username" class="gui-input" placeholder="username">
+                              <label for="username" class="field-icon">
+                                 <i class="fa fa-user"></i>
+                              </label>
+                           </label>
+                        </div>
+                        <!-- -------------- /Block Widget -------------- -->
+                     </div>
+                     <!-- -------------- /section -------------- -->
+
+                     <div class="section">
+                        <label for="password" class="field-label">Password</label>
+                        <label for="password" class="field prepend-icon">
+                           <input type="password" name="password" id="password" class="gui-input" placeholder="***************">
+                           <label for="password" class="field-icon">
+                              <i class="fa fa-lock"></i>
+                           </label>
+                        </label>
+                     </div>
+                     <!-- -------------- /section -------------- -->
+
+
+                  </section>
+
+                  <!-- -------------- step 3 -------------- -->
+                  <h4 class="wizard-section-title">
+                                <i class="fa fa-file-text pr5"></i> Contact Details</h4>
+                  <section class="wizard-section">
+
+                     <div class="section">
+                        <label for="username" class="field-label">Email</label>
+                        <label for="email" class="field prepend-icon">
+                           <input type="email" name="email" id="email" class="gui-input" placeholder="Email address">
+                           <label for="email" class="field-icon">
+                              <i class="fa fa-envelope"></i>
+                           </label>
+                        </label>
+                     </div>
+                     <!-- -------------- /section -------------- -->
+
+                     <div class="section">
+                        <label for="username" class="field-label">Phone</label>
+                        <label for="mobile" class="field prepend-icon">
+                           <input type="tel" name="mobile" id="mobile" class="gui-input" placeholder="Phone number">
+                           <label for="mobile" class="field-icon">
+                              <i class="fa fa-phone-square"></i>
+                           </label>
+                        </label>
+                     </div>
+                     <!-- -------------- /section -------------- -->
+
+                  </section>
+               </div>
+               <!-- -------------- /Wizard -------------- -->
+
+            </form>
+            <!-- -------------- /Form -------------- -->
+
+         </div>
+         <!-- -------------- /Spec Form -------------- -->
+
+      </div>
+
+   </section>
+
+   <!-- -------------- /Body Wrap  --------->
+
+
+   <script src="js/jquery/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery/jquery_ui/jquery-ui.min.js"></script>
+
+   <!-- -------------- HighCharts Plugin -------------- -->
+
+   <!-- -------------- Plugins -------------- -->
+   <script src="js/otros/jquery.validate.min.js"></script>
+   <script src="js/otros/jquery.steps.min.js"></script>
+
+   <!-- -------------- Theme Scripts -------------- -->
+   <script src="js/utility/utility.js"></script>
+   <script src="js/main.js"></script>
+   <script src="js/pages/forms-wizard.js"></script>
+
+   <!-- -------------- /Scripts -------------- -->
+
+
+</body>
+
+</html>
