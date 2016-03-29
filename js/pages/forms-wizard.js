@@ -30,7 +30,7 @@
                 return form.valid();
             },
             onFinished: function(event, currentIndex) {
-                alert("Submitted!");
+                alert("Datos guardados con exito !");
             }
         });
 

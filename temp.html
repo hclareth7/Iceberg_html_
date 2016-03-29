@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iceberg (Iniciar sesiòn)</title>
+    <meta name="description" content="">
+
+    <!-- FONTS-->
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+    <!-- ESTILO-->
+    <link rel="stylesheet" type="text/css" href="css/theme.css">
+    <link rel="stylesheet" type="text/css" href="css/forms.css">
+    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
+
+    <!-- ICONO-->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="utility-page sb-l-c sb-r-c">
+    <!-- -------------- Body Wrap  -------------- -->
+    <header id="topbar" class="alt">
+        <div class="topbar-left">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-icon">
+                    <a href="#">
+                        <span class="fa fa-home"></span>
+                    </a>
+                </li>
+                <li class="breadcrumb-active">
+                    <a href="#">ICEBERG</a>
+                </li>
+                <li class="breadcrumb-link">
+                    <a>Ficha de Informaciòn</a>
+                </li>
+            </ol>
+        </div>
+        <div class="topbar-right">
+            <div class="ml15 ib va-m" id="sidebar_right_toggle">
+                <div class="navbar-btn btn-group btn-group-number mv0">
+                    <button class="btn btn-sm btn-default btn-bordered prn pln">
+                        <i class="fa fa-bar-chart fs22 text-default"></i>
+                    </button>
+                    <button class="btn btn-primary btn-sm btn-bordered hidden-xs">3</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section id="content" class="animated fadeIn">
+
+        <div class="mw1000 center-block">
+
+            <!-- -------------- Wizard -------------- -->
+
+            <!-- -------------- Spec Form -------------- -->
+            <div class="allcp-form" style="max-width: 1000px;">
+
+                <form method="post" action="#" id="form-wizard">
+                    <div class="wizard steps-bg steps-left">
+
+                        <!-- -------------- step 1 -------------- -->
+                        <h4 class="wizard-section-title">
+                                <i class="fa fa-user pr5"></i>DATOS DE LA VIVIENDA</h4>
+                        <section class="wizard-section">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="section">
+                                        <label for="parentesco_encuestado" class="field-label">La familia vive en Casa: (Marque un sola respuesta) </label>
+                                        <br>
+
+                                        <div class=" option-group field">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="familia_vive" checked="">
+                                                <span class="radio"></span>Propia </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="familia_vive">
+                                                <span class="radio"></span>Alquilada </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="familia_vive">
+                                                <span class="radio"></span>La Cuida</label>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="row">
+                                        <br>
+                                        <br>
+                                        <div class="col-md-1 form-inline">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="parentesco_encuestado">
+                                                <span class="radio"></span>Otro</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="Cual">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="section">
+                                        <label for="parentesco_encuestado" class="field-label">En qué tipo de vivienda habita?: (Marque un sola respuesta)</label>
+                                        <br>
+
+                                        <div class=" option-group field">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="tipo_vivienda" checked="">
+                                                <span class="radio"></span>Casa </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="tipo_vivienda">
+                                                <span class="radio"></span>Apartamento </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="tipo_vivienda">
+                                                <span class="radio"></span>Cuarto De Inquilinato</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="row">
+                                        <br>
+                                        <br>
+                                        <div class="col-md-1 form-inline">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="tipo_vivienda">
+                                                <span class="radio"></span>Otro</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="tipo_vivienda" class="field prepend-icon form-inline">
+                                                <input type="text" name="tipo_vivienda" id="jefe_nacio1" class="gui-input" placeholder="Cual">
+                                                <label for="tipo_vivienda" class="field">
+
+                                                </label>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section">
+                                        <label for="parentesco_encuestado" class="field-label">En qué tipo de vivienda habita?: (Marque un sola respuesta)</label>
+                                        <div class=" option-group field">
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Energía</label>
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Gas Natural</label>
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Acueducto</label>
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Alcantarillado</label>
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Tv Cable</label>
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Teléfono Fijo</label>
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Ninguno de los anteriores </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section">
+                                        <label for="materil_paredes_vivienda" class="field-label">Cuál es el material predominante de las paredes exteriores? (Marque un sola respuesta)</label>
+                                        <div class=" option-group field">
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="materil_paredes_vivienda" checked="">
+                                                <span class="radio"></span>Bloque /Ladrillo</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="materil_paredes_vivienda" checked="">
+                                                <span class="radio"></span>Bahareque</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="materil_paredes_vivienda" checked="">
+                                                <span class="radio"></span>Madera/Tabla/Tablón</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="materil_paredes_vivienda" checked="">
+                                                <span class="radio"></span>Guadua/Caña/Esterilla</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="materil_paredes_vivienda" checked="">
+                                                <span class="radio"></span>Zinc/Tela/Cartón</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="materil_paredes_vivienda" checked="">
+                                                <span class="radio"></span>Desechos Plásticos</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="materil_paredes_vivienda" checked="">
+                                                <span class="radio"></span>Sin Paredes</label>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="section">
+                                        <label for="piso_vivienda" class="field-label">Cuál es el material predominante de los pisos? (Marque un sola respuesta) </label>
+                                        <br>
+
+                                        <div class=" option-group field">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="piso_vivienda" checked="">
+                                                <span class="radio"></span>Cerámica/Baldosas </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="piso_vivienda">
+                                                <span class="radio"></span>Tableta/Tablón </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="piso_vivienda">
+                                                <span class="radio"></span>Cemento/Gravilla</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="piso_vivienda">
+                                                <span class="radio"></span>Tierra/Arena</label>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-4">
+
+                                    <div class="row">
+                                        <br>
+                                        <br>
+                                        <div class="col-md-1 form-inline">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="parentesco_encuestado">
+                                                <span class="radio"></span>Otro</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="Cual">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="section">
+                                        <label for="cuartos_vivienda" class="field-label">Cuantos cuartos o piezas dispone su hogar? (Marque un sola respuesta)</label>
+                                        <div class=" option-group field">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="cuartos_vivienda" checked="">
+                                                <span class="radio"></span>1-2 </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="cuartos_vivienda">
+                                                <span class="radio"></span>3-4 </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="cuartos_vivienda">
+                                                <span class="radio"></span>5-6</label>
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+                                            <label for="cuartos_vivienda" class="field-label">Cuantas personas duermen por habitación: </label>
+                                            <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="Cuantas">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="section">
+                                        <label for="posee_animales" class="field-label">Posee animales de cría: </label>
+                                        <div class=" option-group field">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="posee_animales" checked="">
+                                                <span class="radio"></span>Si</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="posee_animales">
+                                                <span class="radio"></span>No</label>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-md-6">
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+                                            <label for="cuartos_vivienda" class="field-label">Cuantos</label>
+                                            <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="Cuantos">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="section">
+                                        <label for="parentesco_encuestado" class="field-label">Animales de cria:</label>
+                                        <br>
+
+                                        <div class=" option-group field">
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Gallinas</label>
+
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Cerdos</label>
+
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Pollos</label>
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Cocas</label>
+
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Pavos</label>
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Patos</label>
+                                            <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Vacas</label>
+
+
+
+                                        </div>
+                                        <br>
+                                        <div class="row">
+                                            <div class="col-md-1 form-inline">
+                                                <label class="option option-primary radio-inline">
+                                                    <input type="radio" name="parentesco_encuestado">
+                                                    <span class="radio"></span>Otro</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                    <input type="text" name="parentesco_encuestado" id="jefe_nacio1" class="gui-input" placeholder="Otro">
+                                                    <label for="parentesco_encuestado" class="field">
+
+                                                    </label>
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="section">
+                                        <label for="posee_animales" class="field-label">Su vivienda se Encuentra en Riesgo: </label>
+                                        <div class=" option-group field">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="posee_animales" checked="">
+                                                <span class="radio"></span>Si</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="posee_animales">
+                                                <span class="radio"></span>No</label>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="section">
+                                        <label for="piso_vivienda" class="field-label">Riesgos</label>
+                                        <br>
+
+                                        <div class=" option-group field">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="riesgo_vivienda" checked="">
+                                                <span class="radio"></span>Inundaciones </label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="riesgo_vivienda">
+                                                <span class="radio"></span>Avalancha / Derrumbe/ Deslizamiento</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="riesgo_vivienda">
+                                                <span class="radio"></span>Hundimiento Del Terreno</label>
+
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="riesgo_vivienda">
+                                                <span class="radio"></span>Desbordamiento</label>
+
+
+
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+                                <div class="col-md-4">
+
+                                    <div class="row">
+                                        <br>
+                                        <br>
+                                        <div class="col-md-1 form-inline">
+                                            <label class="option option-primary radio-inline">
+                                                <input type="radio" name="parentesco_encuestado">
+                                                <span class="radio"></span>Otro</label>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="Cual">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                            </label>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+                    </div>
+                    <!-- -------------- /Wizard -------------- -->
+
+                </form>
+                <!-- -------------- /Form -------------- -->
+
+            </div>
+            <!-- -------------- /Spec Form -------------- -->
+
+        </div>
+
+    </section>
+
+    <!-- -------------- /Body Wrap  --------->
+
+
+    <script src="js/jquery/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery/jquery_ui/jquery-ui.min.js"></script>
+
+    <!-- -------------- HighCharts Plugin -------------- -->
+
+    <!-- -------------- Plugins -------------- -->
+    <script src="js/otros/jquery.validate.min.js"></script>
+    <script src="js/otros/jquery.steps.min.js"></script>
+
+    <!-- -------------- Theme Scripts -------------- -->
+    <script src="js/utility/utility.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/pages/forms-wizard.js"></script>
+
+    <!-- -------------- /Scripts -------------- -->
+
+
+</body>
+
+</html>
