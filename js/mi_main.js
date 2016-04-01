@@ -1,15 +1,13 @@
 'use strict';
-//  Author: ThemeREX.com
-//  forms-wizard.html scripts
+//  Author: Hernando Clareth Ariza Perez
+//  index.html scripts
 //
 
 (function($) {
 
     $(document).ready(function() {
 
-        "use strict";
 
-        // Form Wizard
         var form = $("#form-wizard");
 
         form.children(".wizard").steps({
@@ -28,7 +26,15 @@
             }
         });
 
+       $('#datetimepicker5').datetimepicker({
+            defaultDate: "10/01/2015",
+            pickDate: false
+        });
 
+       $('.datetimepicker').datetimepicker({
+            defaultDate: Date.now(),
+            pickDate: true
+        });
 
 
     });
