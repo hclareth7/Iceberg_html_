@@ -17,3 +17,7 @@ input{
 .wizard > div > ul >li >a {
   background:#80DAE5;
 }
+
+.mi-modal{
+   min-width: 60%;
+}

@@ -40,6 +40,17 @@
       });
 
 
+      $('#btnCrearParticipante').magnificPopup({
+         removalDelay: 300,
+         items: {
+            src: "#modal-form-crear-participante"
+         },
+         mainClass: "mfp-zoomIn",
+         midClick: true
+      });
+
+
+
    });
 
 })(jQuery);
