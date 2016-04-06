@@ -26,6 +26,91 @@
 </head>
 
 <body class="utility-page sb-l-c sb-r-c">
+
+   <!-- Modals->
+  <div id="modal-form" class=" popup-basic allcp-form mfp-with-anim mfp-hide">
+                <div class="panel">
+                    <div class="panel-heading">
+              <span class="panel-title">
+                <i class="fa fa-rocket"></i>Leave a comment</span>
+                    </div>
+                    <!-- -------------- /Panel Heading -------------- -->
+
+   <form method="post" action="http://alliance-html.themerex.net/" id="comment">
+      <div class="panel-body  ph15">
+         <div class="section row">
+            <div class="col-md-6 ph15">
+               <label for="firstname" class="field prepend-icon">
+                  <input type="text" name="firstname" id="firstname" class="gui-input" placeholder="First name...">
+                  <label for="firstname" class="field-icon">
+                     <i class="fa fa-user"></i>
+                  </label>
+               </label>
+            </div>
+            <!-- -------------- /section -------------- -->
+
+            <div class="col-md-6 ph15">
+               <label for="lastname" class="field prepend-icon">
+                  <input type="text" name="lastname" id="lastname" class="gui-input" placeholder="Last name...">
+                  <label for="lastname" class="field-icon">
+                     <i class="fa fa-user"></i>
+                  </label>
+               </label>
+            </div>
+            <!-- -------------- /section -------------- -->
+
+         </div>
+         <!-- -------------- /Section -------------- -->
+
+         <div class="section row">
+            <div class="col-md-6 ph15">
+               <label for="email" class="field prepend-icon">
+                  <input type="email" name="email" id="email" class="gui-input" placeholder="Email address">
+                  <label for="email" class="field-icon">
+                     <i class="fa fa-envelope"></i>
+                  </label>
+               </label>
+            </div>
+            <!-- -------------- /section -------------- -->
+
+            <div class="col-md-6 ph15">
+               <label for="website" class="field prepend-icon">
+                  <input type="url" name="website" id="lastname" class="gui-input" placeholder="Website url...">
+                  <label for="website" class="field-icon">
+                     <i class="fa fa-globe"></i>
+                  </label>
+               </label>
+            </div>
+            <!-- -------------- /section -------------- -->
+
+         </div>
+         <!-- -------------- /Section -------------- -->
+
+         <div class="section ph5">
+            <label for="comment" class="field prepend-icon">
+               <textarea class="gui-textarea" id="comment" name="comment" placeholder="Your comment"></textarea>
+               <label for="comment" class="field-icon">
+                  <i class="fa fa-comments"></i>
+               </label>
+            </label>
+         </div>
+         <!-- -------------- /section -------------- -->
+
+      </div>
+      <!-- -------------- /Form -------------- -->
+
+      <div class="panel-footer">
+         <button type="submit" class="button btn-primary">Post Comment</button>
+      </div>
+      <!-- -------------- /Panel Footer -------------- -->
+   </form>
+   </div>
+   <!-- -------------- /Panel -------------- -->
+   </div>
+
+   <!-- Fin Modals->
+
+
    <!-- -------------- Body Wrap  -------------- -->
    <header id="topbar" class="alt">
       <div class="topbar-left">
@@ -68,196 +153,374 @@
             <form method="post" action="#" id="form-wizard">
                <div class="wizard steps-bg steps-left">
 
-                  <!-- -------------- step 1 -------------- -->
                   <h4 class="wizard-section-title">
-                                <i class="fa fa-user pr5"></i>VIOLENCIA INTRAFAMILIAR</h4>
+                                <i class="fa fa-user pr5"></i>COMPOSICION FAMILIAR</h4>
                   <section class="wizard-section">
-
                      <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                            <div class="section">
-                              <label for="parentesco_encuestado" class="field-label">¿Usted tiene conocimiento si se han presentando manifestaciones de violencia dentro de la familia?:</label>
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <div class=" option-group field">
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Si </label>
-
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>No</label>
-
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>NS </label>
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>NA </label>
-                                    </div>
-                                 </div>
-
-                              </div>
-
-
-                              <br>
-
-
+                              <label for="identificacion" class="field-label">Nombre completo</label>
+                              <label for="identificacion" class="field prepend-icon">
+                                 <input type="text" name="nombre_completo" id="nombre_completo" class="gui-input" placeholder="Nombre completo">
+                                 <label for="nombre_completo" class="field-icon">
+                                    <i class="fa fa-user"></i>
+                                 </label>
+                              </label>
                            </div>
 
                         </div>
+
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="apellidos" class="field-label">Sexo</label>
+                              <div class="option-group field">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="sexo" checked="">
+                                    <span class="radio"></span>Masculino</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="sexo">
+                                    <span class="radio"></span>Femenino</label>
+                              </div>
+                           </div>
+
+                        </div>
+
+
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="edad" class="field-label">Edad</label>
+                              <label for="edad" class="field prepend-icon">
+                                 <input type="number" name="edad" id="edad" class="gui-input" placeholder="Nombre completo">
+                                 <label for="edad" class="field-icon">
+                                    <i class="fa fa-user"></i>
+                                 </label>
+                              </label>
+                           </div>
+                        </div>
+
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="area" class="field-label">Tipo de documento</label>
+                              <label class="field select">
+                                 <select id="tipo_documento" name="tipo_documento">
+                                    <option value="ararca">RC</option>
+                                    <option value="bocachica">TI</option>
+                                    <option value="canooro">CC</option>
+                                    <option value="pasacaballo">Ninguno</option>
+                                    <option value="santaana">No sabe</option>
+                                 </select>
+                                 <i class="arrow"></i>
+                              </label>
+                           </div>
+                        </div>
+
+
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="apellidos" class="field-label">Estado civil</label>
+                              <div class="option-group field">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="estado_civil" checked="">
+                                    <span class="radio"></span>Soltero</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="estado_civil">
+                                    <span class="radio"></span>Union Libre</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="estado_civil">
+                                    <span class="radio"></span>Casado</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="estado_civil">
+                                    <span class="radio"></span>Separado</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="estado_civil">
+                                    <span class="radio"></span>Viudo</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="estado_civil">
+                                    <span class="radio"></span>No sabe</label>
+                              </div>
+                           </div>
+                        </div>
+
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="apellidos" class="field-label">Parentesco con jefe de hogar</label>
+                              <div class="option-group field">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="parentesco" checked="">
+                                    <span class="radio"></span>Esposo(a)</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="parentesco">
+                                    <span class="radio"></span>Hijo (a)</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="parentesco">
+                                    <span class="radio"></span>Hijo (a)</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="parentesco">
+                                    <span class="radio"></span>Hermano(a) </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="parentesco">
+                                    <span class="radio"></span>Abuelo (a)</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="parentesco">
+                                    <span class="radio"></span>Primo (a)</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="parentesco">
+                                    <span class="radio"></span>No Sabe</label>
+                              </div>
+                           </div>
+                        </div>
+
+
                      </div>
                      <div class="row">
                         <div class="col-md-12">
                            <div class="section">
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <div class=" option-group field">
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Agresión verbal entre los padres </label>
+                              <label for="apellidos" class="field-label">Nivel Educativo</label>
+                              <div class="option-group field">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo" checked="">
+                                    <span class="radio"></span>Analfabeta</label>
 
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Agresión física o verbal de los padres hacia los hijos e hijas </label>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Primaria</label>
 
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Abuso sexual</label>
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Agresiones físicas entre los padres</label>
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Trabajo infantil</label>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Primaria Incompleta
+                                 </label>
 
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Abandono por parte de uno de los padres</label>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Básica</label>
 
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Abandono por parte de ambos padres</label>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Media</label>
 
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Ninguno</label>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Secundaria Incompleta
+                                 </label>
 
-                                           <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>No aplica</label>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Técnico</label>
 
-                                       <br>
-                                       <br>
-                                       <div class="row">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Profesional</label>
 
-                                          <div class="col-md-2">
-                                             <label class="checkbox-inline mt15 option option-primary">
-                                                <input type="checkbox" name="checked1">
-                                                <span class="checkbox"></span>Otro</label>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>No Sabe</label>
 
-                                          </div>
-
-                                          <div class="col-md-3">
-
-                                             <label for="parentesco_encuestado" class="field prepend-icon form-inline">
-                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
-                                                <label for="parentesco_encuestado" class="field">
-
-                                                </label>
-                                             </label>
-                                          </div>
-
-                                       </div>
-
-
-                                    </div>
-                                 </div>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>No aplica</label>
                               </div>
-
-
-                              <br>
-
-
                            </div>
-
                         </div>
+
+
+
                      </div>
                      <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                            <div class="section">
-                              <label for="parentesco_encuestado" class="field-label">¿Cómo es la disposición de excretas en su familia? (Mencione las opciones y marque solo todas las menciones):</label>
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <div class=" option-group field">
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Baño </label>
+                              <label for="area" class="field-label">Ocupación</label>
+                              <label class="field select">
+                                 <select id="ocupacion" name="ocupacion">
+                                    <option value="ararca">Trabaja</option>
+                                    <option value="bocachica">Estudia</option>
+                                    <option value="canooro">Estudia y Trabaja</option>
+                                    <option value="pasacaballo">Desempleado</option>
+                                    <option value="santaana">Pensionado</option>
+                                    <option value="santaana">Ama de Casa</option>
+                                    <option value="santaana">No aplica</option>
+                                    <option value="santaana">No sabe</option>
+                                 </select>
+                                 <i class="arrow"></i>
+                              </label>
+                           </div>
+                        </div>
 
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Letrina</label>
-
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Poza Séptica </label>
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>Campo abierto </label>
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>La quema</label>
-
-                                       <label class="checkbox-inline mt15 option option-primary">
-                                          <input type="checkbox" name="checked1">
-                                          <span class="checkbox"></span>La entierran</label>
-
-                                       <br>
-                                       <br>
-                                       <div class="row">
-
-                                          <div class="col-md-2">
-                                             <label class="checkbox-inline mt15 option option-primary">
-                                                <input type="checkbox" name="checked1">
-                                                <span class="checkbox"></span>Otro</label>
-
-                                          </div>
-
-                                          <div class="col-md-3">
-
-                                             <label for="parentesco_encuestado" class="field prepend-icon form-inline">
-                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
-                                                <label for="parentesco_encuestado" class="field">
-
-                                                </label>
-                                             </label>
-                                          </div>
-
-                                       </div>
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="area" class="field-label">Actividad Económica</label>
+                              <label class="field select">
+                                 <select id="actividad_economica" name="actividad_economica">
+                                    <option value="ararca">Pecuaria </option>
+                                    <option value="bocachica">Construcción </option>
+                                    <option value="canooro">Comercio </option>
+                                    <option value="pasacaballo">Agrícola /Ganadera </option>
+                                    <option value="santaana">Industria </option>
+                                    <option value="santaana">Moto taxista</option>
+                                    <option value="santaana">Servicio Doméstico
+                                    </option>
+                                    <option value="santaana">Artesano</option>
+                                    <option value="santaana">Turismo </option>
+                                    <option value="santaana">No aplica </option>
+                                 </select>
+                                 <i class="arrow"></i>
+                              </label>
+                           </div>
+                        </div>
 
 
-                                    </div>
-                                 </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="apellidos" class="field-label">Tipo de Vinculación Laboral</label>
+                              <div class="option-group field">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo" checked="">
+                                    <span class="radio"></span>No tiene</label>
 
-                                 <div class="col-md-2">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Definido</label>
 
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>Indefinido
+                                 </label>
 
-                                 </div>
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="nivel_educativo">
+                                    <span class="radio"></span>No aplica</label>
 
 
                               </div>
-
-
-                              <br>
-
-
                            </div>
-
                         </div>
-                     </div>
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="ingreso_economico" class="field-label">Ingreso Económico Mensual</label>
+                              <div class="option-group field">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="ingreso_economico" checked="">
+                                    <span class="radio"></span>Un SMLV </label>
 
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="ingreso_economico">
+                                    <span class="radio"></span>Mayor un SMLV
+                                 </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="ingreso_economico">
+                                    <span class="radio"></span>Menos de un SMLV
+
+                                 </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="ingreso_economico">
+                                    <span class="radio"></span>Menor de medio SMLV
+                                 </label>
+
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="ingreso_economico">
+                                    <span class="radio"></span>No sabe
+                                 </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="ingreso_economico">
+                                    <span class="radio"></span>No Aplica
+                                 </label>
+
+                              </div>
+                           </div>
+                        </div>
+
+
+                     </div>
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="religion" class="field-label">Religión</label>
+                              <div class="option-group field">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="religion" checked="">
+                                    <span class="radio"></span>Católico</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="religion">
+                                    <span class="radio"></span>Testigo Jehová
+                                 </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="religion">
+                                    <span class="radio"></span>Mormón
+                                 </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="religion">
+                                    <span class="radio"></span>Evangélico</label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="religion">
+                                    <span class="radio"></span>No Sabe</label>
+
+
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="seguridad_social" class="field-label">Seguridad Social</label>
+                              <div class="option-group field">
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="seguridad_social" checked="">
+                                    <span class="radio"></span>Sisbén </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="seguridad_social">
+                                    <span class="radio"></span>EPS
+                                 </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="seguridad_social">
+                                    <span class="radio"></span>EPS-S
+
+                                 </label>
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="seguridad_social">
+                                    <span class="radio"></span>Menor de medio SMLV
+                                 </label>
+
+
+                                 <label class="radio-inline mt15 option option-primary">
+                                    <input type="radio" name="seguridad_social">
+                                    <span class="radio"></span>No sabe el nombre
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+
+
+                     </div>
 
                   </section>
+
                </div>
                <!-- -------------- /Wizard -------------- -->
 
