@@ -15,6 +15,7 @@
    <link rel="stylesheet" type="text/css" href="css/theme.css">
    <link rel="stylesheet" type="text/css" href="css/forms.css">
    <link rel="stylesheet" type="text/css" href="css/plugins/bootstrap-datetimepicker.css">
+   <link rel="stylesheet" type="text/css" href="js/plugins/magnific/magnific-popup.css">
    <link rel="stylesheet" type="text/css" href="css/miestilo.css">
 
    <!-- ICONO-->
@@ -27,6 +28,399 @@
 </head>
 
 <body class="utility-page sb-l-c sb-r-c" style="height:auto !important">
+
+  <!-- Modals-->
+
+   <div id="modal-form-crear-participante" class=" popup-basic allcp-form mfp-with-anim mfp-hide mi-modal">
+      <div class="panel">
+         <div class="panel-heading">
+            <span class="panel-title">
+                <i class="fa fa-group"></i>
+                Miembro de la familia
+            </span>
+         </div>
+         <!-- -------------- /Panel Heading -------------- -->
+
+         <div method="post" id="comment">
+            <div class="panel-body  ph15">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="identificacion" class="field-label">Nombre completo</label>
+                        <label for="identificacion" class="field prepend-icon">
+                           <input type="text" name="nombre_completo" id="nombre_completo" class="gui-input" placeholder="Nombre completo">
+                           <label for="nombre_completo" class="field-icon">
+                              <i class="fa fa-user"></i>
+                           </label>
+                        </label>
+                     </div>
+
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="apellidos" class="field-label">Sexo</label>
+                        <div class="option-group field">
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="sexo" checked="">
+                              <span class="radio"></span>Masculino</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="sexo">
+                              <span class="radio"></span>Femenino</label>
+                        </div>
+                     </div>
+
+                  </div>
+
+
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="edad" class="field-label">Edad</label>
+                        <label for="edad" class="field prepend-icon">
+                           <input type="number" name="edad" id="edad" class="gui-input" placeholder="Edad">
+                           <label for="edad" class="field-icon">
+                              <i class="fa fa-user"></i>
+                           </label>
+                        </label>
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="area" class="field-label">Tipo de documento</label>
+                        <label class="field select">
+                           <select id="tipo_documento" name="tipo_documento">
+                              <option value="ararca">RC</option>
+                              <option value="bocachica">TI</option>
+                              <option value="canooro">CC</option>
+                              <option value="pasacaballo">Ninguno</option>
+                              <option value="santaana">No sabe</option>
+                           </select>
+                           <i class="arrow"></i>
+                        </label>
+                     </div>
+                  </div>
+
+
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="apellidos" class="field-label">Estado civil</label>
+                        <div class="option-group field">
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="estado_civil" checked="">
+                              <span class="radio"></span>Soltero</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="estado_civil">
+                              <span class="radio"></span>Union Libre</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="estado_civil">
+                              <span class="radio"></span>Casado</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="estado_civil">
+                              <span class="radio"></span>Separado</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="estado_civil">
+                              <span class="radio"></span>Viudo</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="estado_civil">
+                              <span class="radio"></span>No sabe</label>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="apellidos" class="field-label">Parentesco con jefe de hogar</label>
+                        <div class="option-group field">
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="parentesco" checked="">
+                              <span class="radio"></span>Esposo(a)</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="parentesco">
+                              <span class="radio"></span>Hijo (a)</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="parentesco">
+                              <span class="radio"></span>Hijo (a)</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="parentesco">
+                              <span class="radio"></span>Hermano(a) </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="parentesco">
+                              <span class="radio"></span>Abuelo (a)</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="parentesco">
+                              <span class="radio"></span>Primo (a)</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="parentesco">
+                              <span class="radio"></span>No Sabe</label>
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="section">
+                        <label for="apellidos" class="field-label">Nivel Educativo</label>
+                        <div class="option-group field">
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo" checked="">
+                              <span class="radio"></span>Analfabeta</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Primaria</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Primaria Incompleta
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Básica</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Media</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Secundaria Incompleta
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Técnico</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Profesional</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>No Sabe</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>No aplica</label>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="area" class="field-label">Ocupación</label>
+                        <label class="field select">
+                           <select id="ocupacion" name="ocupacion">
+                              <option value="ararca">Trabaja</option>
+                              <option value="bocachica">Estudia</option>
+                              <option value="canooro">Estudia y Trabaja</option>
+                              <option value="pasacaballo">Desempleado</option>
+                              <option value="santaana">Pensionado</option>
+                              <option value="santaana">Ama de Casa</option>
+                              <option value="santaana">No aplica</option>
+                              <option value="santaana">No sabe</option>
+                           </select>
+                           <i class="arrow"></i>
+                        </label>
+                     </div>
+                  </div>
+
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="area" class="field-label">Actividad Económica</label>
+                        <label class="field select">
+                           <select id="actividad_economica" name="actividad_economica">
+                              <option value="ararca">Pecuaria </option>
+                              <option value="bocachica">Construcción </option>
+                              <option value="canooro">Comercio </option>
+                              <option value="pasacaballo">Agrícola /Ganadera </option>
+                              <option value="santaana">Industria </option>
+                              <option value="santaana">Moto taxista</option>
+                              <option value="santaana">Servicio Doméstico
+                              </option>
+                              <option value="santaana">Artesano</option>
+                              <option value="santaana">Turismo </option>
+                              <option value="santaana">No aplica </option>
+                           </select>
+                           <i class="arrow"></i>
+                        </label>
+                     </div>
+                  </div>
+
+
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="apellidos" class="field-label">Tipo de Vinculación Laboral</label>
+                        <div class="option-group field">
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo" checked="">
+                              <span class="radio"></span>No tiene</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Definido</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>Indefinido
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="nivel_educativo">
+                              <span class="radio"></span>No aplica</label>
+
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="ingreso_economico" class="field-label">Ingreso Económico Mensual</label>
+                        <div class="option-group field">
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="ingreso_economico" checked="">
+                              <span class="radio"></span>Un SMLV </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="ingreso_economico">
+                              <span class="radio"></span>Mayor un SMLV
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="ingreso_economico">
+                              <span class="radio"></span>Menos de un SMLV
+
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="ingreso_economico">
+                              <span class="radio"></span>Menor de medio SMLV
+                           </label>
+
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="ingreso_economico">
+                              <span class="radio"></span>No sabe
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="ingreso_economico">
+                              <span class="radio"></span>No Aplica
+                           </label>
+
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="religion" class="field-label">Religión</label>
+                        <div class="option-group field">
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="religion" checked="">
+                              <span class="radio"></span>Católico</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="religion">
+                              <span class="radio"></span>Testigo Jehová
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="religion">
+                              <span class="radio"></span>Mormón
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="religion">
+                              <span class="radio"></span>Evangélico</label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="religion">
+                              <span class="radio"></span>No Sabe</label>
+
+
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="section">
+                        <label for="seguridad_social" class="field-label">Seguridad Social</label>
+                        <div class="option-group field">
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="seguridad_social" checked="">
+                              <span class="radio"></span>Sisbén </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="seguridad_social">
+                              <span class="radio"></span>EPS
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="seguridad_social">
+                              <span class="radio"></span>EPS-S
+
+                           </label>
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="seguridad_social">
+                              <span class="radio"></span>Menor de medio SMLV
+                           </label>
+
+
+                           <label class="radio-inline mt15 option option-primary">
+                              <input type="radio" name="seguridad_social">
+                              <span class="radio"></span>No sabe el nombre
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+
+
+               </div>
+
+            </div>
+            <!-- -------------- /Form -------------- -->
+
+            <div class="panel-footer">
+               <button class="button btn-primary ">Guardar</button>
+            </div>
+            <!-- -------------- /Panel Footer -------------- -->
+         </div>
+      </div>
+      <!-- -------------- /Panel -------------- -->
+   </div>
+
+   <!-- Fin Modals->
+
+
    <!-- -------------- Body Wrap  -------------- -->
    <header id="topbar" class="alt">
       <div class="topbar-left">
@@ -3145,19 +3539,19 @@
                                     <input type="radio" name="mes" checked="">
                                     <span class="radio"></span>Moto </label>
 
-                                    <label class="radio-inline mt15 option option-primary">
+                                 <label class="radio-inline mt15 option option-primary">
                                     <input type="radio" name="mes" checked="">
-                                    <span class="radio"></span>Carro  </label>
+                                    <span class="radio"></span>Carro </label>
 
-                                    <label class="radio-inline mt15 option option-primary">
+                                 <label class="radio-inline mt15 option option-primary">
                                     <input type="radio" name="mes" checked="">
                                     <span class="radio"></span>Bus </label>
 
-                                    <label class="radio-inline mt15 option option-primary">
+                                 <label class="radio-inline mt15 option option-primary">
                                     <input type="radio" name="mes" checked="">
                                     <span class="radio"></span>Bicicleta </label>
 
-                                    <label class="radio-inline mt15 option option-primary">
+                                 <label class="radio-inline mt15 option option-primary">
                                     <input type="radio" name="mes" checked="">
                                     <span class="radio"></span>Lancha </label>
 
@@ -3177,19 +3571,19 @@
                                     <input type="radio" name="mes" checked="">
                                     <span class="radio"></span>Moto </label>
 
-                                    <label class="radio-inline mt15 option option-primary">
+                                 <label class="radio-inline mt15 option option-primary">
                                     <input type="radio" name="mes" checked="">
-                                    <span class="radio"></span>Carro  </label>
+                                    <span class="radio"></span>Carro </label>
 
-                                    <label class="radio-inline mt15 option option-primary">
+                                 <label class="radio-inline mt15 option option-primary">
                                     <input type="radio" name="mes" checked="">
                                     <span class="radio"></span>Bus </label>
 
-                                    <label class="radio-inline mt15 option option-primary">
+                                 <label class="radio-inline mt15 option option-primary">
                                     <input type="radio" name="mes" checked="">
                                     <span class="radio"></span>Bicicleta </label>
 
-                                    <label class="radio-inline mt15 option option-primary">
+                                 <label class="radio-inline mt15 option option-primary">
                                     <input type="radio" name="mes" checked="">
                                     <span class="radio"></span>Lancha </label>
 
@@ -3440,6 +3834,30 @@
                   <h4 class="wizard-section-title">
                                 <i class="fa fa-user pr5"></i>COMPOSICION FAMILIAR</h4>
                   <section class="wizard-section">
+                     <div class="row">
+                        <div class="col-sm-6 col-xl-3">
+                           <div class="panel panel-tile">
+                              <div class="panel-body">
+                                 <div class="row pv10">
+                                    <div class="col-xs-5 ph10"><img src="img/clipart2.png" class="img-responsive mauto" alt=""></div>
+                                    <div class="col-xs-7 pl5">
+                                       <h6 class="text-muted">Numero de Familiares</h6>
+
+                                       <h2 class="fs50 mt5 mbn">0</h2>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <button id="btnCrearParticipante" type="button" class="btn btn-lg btn-primary btn-block">Crear nuevo</button>
+                        </div>
+
+
+
+
+                     </div>
+
+
+
                   </section>
 
 
