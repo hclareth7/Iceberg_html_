@@ -209,18 +209,55 @@
 
                         <div class="col-md-6">
                            <div class="section">
-                              <label for="papellido" class="field-label">Primer apellido</label>
+                              <label for="papellido" class="field-label">Fecha de nacimiento</label>
                               <div class="input-group date" id="datetimepicker2">
                                  <span class="input-group-addon cursor">
                                    <i class="fa fa-calendar"></i>
                                  </span>
-                                 <input type="text" class="form-control">
+                                 <input type="text" class="form-control datetimepicker">
                               </div>
                            </div>
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="direccion" class="field-label">Direccion</label>
+
+                              <div class="smart-widget">
+                                 <label for="direccion" class="field prepend-icon">
+                                    <input type="text" name="direccion" id="direccion" class="gui-input" placeholder="Direccion">
+                                    <label for="direccion" class="field-icon">
+                                       <i class="fa fa-user"></i>
+                                    </label>
+                                 </label>
+                              </div>
+                              <!-- -------------- /Block Widget -------------- -->
+                           </div>
+                        </div>
+
+                        <div class="col-md-6">
+                           <div class="section">
+                              <label for="barrio" class="field-label">Barrio</label>
+
+                              <div class="smart-widget">
+                                 <label for="barrio" class="field prepend-icon">
+                                    <input type="text" name="barrio" id="barrio" class="gui-input" placeholder="Barrio">
+                                    <label for="barrio" class="field-icon">
+                                       <i class="fa fa-user"></i>
+                                    </label>
+                                 </label>
+                              </div>
+                              <!-- -------------- /Block Widget -------------- -->
+                           </div>
+
                         </div>
 
 
                      </div>
+
+
                   </section>
 
                   <!-- -------------- step 2 -------------- -->
@@ -228,34 +265,7 @@
                                 <i class="fa fa-user-secret pr5"></i>DATOS SOCIODEMOGRAFICOS Y DE LA FAMILIA</h4>
                   <section class="wizard-section">
 
-                     <div class="section">
-                        <label for="direccion" class="field-label">Direccion</label>
 
-                        <div class="smart-widget">
-                           <label for="direccion" class="field prepend-icon">
-                              <input type="text" name="direccion" id="direccion" class="gui-input" placeholder="Direccion">
-                              <label for="direccion" class="field-icon">
-                                 <i class="fa fa-user"></i>
-                              </label>
-                           </label>
-                        </div>
-                        <!-- -------------- /Block Widget -------------- -->
-                     </div>
-
-
-                     <div class="section">
-                        <label for="barrio" class="field-label">Barrio</label>
-
-                        <div class="smart-widget">
-                           <label for="barrio" class="field prepend-icon">
-                              <input type="text" name="barrio" id="barrio" class="gui-input" placeholder="Barrio">
-                              <label for="barrio" class="field-icon">
-                                 <i class="fa fa-user"></i>
-                              </label>
-                           </label>
-                        </div>
-                        <!-- -------------- /Block Widget -------------- -->
-                     </div>
 
                      <div class="section">
                         <label for="nfamilia" class="field-label">Numero de familia</label>
@@ -615,7 +625,6 @@
 
                      </div>
                   </section>
-
                   <!-- -------------- step 3 -------------- -->
                   <h4 class="wizard-section-title">
                                 <i class="fa fa-file-text pr5"></i>CONFORMACIÓN FAMILIAR</h4>
@@ -1432,13 +1441,653 @@
                   <h4 class="wizard-section-title">
                                 <i class="fa fa-user pr5"></i>SANEAMIENTO BÁSICO</h4>
                   <section class="wizard-section">
+
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿De dónde se abastece de agua? (Espere la respuesta y marque todas las menciones):</label>
+
+                              <div class=" option-group field">
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Acueducto</label>
+
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Pozo</label>
+
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Agua Lluvia</label>
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Pila pública</label>
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Carro Tanque</label>
+
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Rio/manantial</label>
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Comprada</label>
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>NS/NR</label>
+
+                              </div>
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-md-6 form-inline">
+                           <label for="otra_comunidad" class="field-label">El agua para consumo humano se mantiene en recipientes tapados</label>
+                           <label class="option option-primary radio-inline">
+                              <input type="radio" name="otra_comunidad">
+                              <span class="radio"></span>Si</label>
+
+                           <label class="option option-primary radio-inline">
+                              <input type="radio" name="otra_comunidad">
+                              <span class="radio"></span>No</label>
+                        </div>
+
+
+
+                     </div>
+                     <br>
+                     <br>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Qué tratamiento le hacen al agua para tomar? (Espere la respuesta y marque todas las menciones):</label>
+                              <div class="row">
+                                 <div class="col-md-7">
+                                    <div class=" option-group field">
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Ninguno </label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Hervirla</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Colarla </label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Filtrarla </label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Otro</label>
+
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-3">
+
+                                    <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                       <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
+                                       <label for="parentesco_encuestado" class="field">
+
+                                       </label>
+                                    </label>
+                                 </div>
+
+
+                              </div>
+
+
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Cómo disponen de la basura que producen en su vivienda? (Espere la respuesta y marque todas las menciones):</label>
+
+                              <div class=" option-group field">
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>La recoge el camión</label>
+
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Reciclarla</label>
+
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>Se quema</label>
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>En campo Abierto</label>
+                                 <label class="checkbox-inline mt15 option option-primary">
+                                    <input type="checkbox" name="checked1">
+                                    <span class="checkbox"></span>La entierran</label>
+
+                              </div>
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Cómo es la disposición de excretas en su familia? (Mencione las opciones y marque solo todas las menciones):</label>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class=" option-group field">
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Baño </label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Letrina</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Poza Séptica </label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Campo abierto </label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>La quema</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>La entierran</label>
+
+                                       <br>
+                                       <br>
+                                       <div class="row">
+
+                                          <div class="col-md-2">
+                                             <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Otro</label>
+
+                                          </div>
+
+                                          <div class="col-md-3">
+
+                                             <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                             </label>
+                                          </div>
+
+                                       </div>
+
+
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-2">
+
+
+                                 </div>
+
+
+                              </div>
+
+
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+
                   </section>
 
 
                   <h4 class="wizard-section-title">
                                 <i class="fa fa-user pr5"></i>RELACIONES INTRAFAMILIARES</h4>
                   <section class="wizard-section">
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Cómo es la disposición de excretas en su familia? (Mencione las opciones y marque solo todas las menciones) :</label>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class=" option-group field">
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>No Aplica </label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Dialogando</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Con gritos y peleas </label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Dejan que pase el tiempo </label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Con golpes y maltrato</label>
+
+                                       <br>
+                                       <br>
+                                       <div class="row">
+
+                                          <div class="col-md-2">
+                                             <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Otro</label>
+
+                                          </div>
+
+                                          <div class="col-md-3">
+
+                                             <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                             </label>
+                                          </div>
+
+                                       </div>
+
+
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-2">
+
+
+                                 </div>
+
+
+                              </div>
+
+
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Cuáles son las formas más frecuentes en que los padres de familia le demuestran el afecto a los niñ@s? (Marque las respuesta) :</label>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class=" option-group field">
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>No aplica</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Regalos </label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Besos/abrazos</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>No lo demuestran </label>
+                                       <br>
+                                       <br>
+                                       <div class="row">
+
+                                          <div class="col-md-2">
+                                             <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Otro</label>
+
+                                          </div>
+
+                                          <div class="col-md-3">
+
+                                             <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                             </label>
+                                          </div>
+
+                                       </div>
+
+
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-2">
+
+
+                                 </div>
+
+
+                              </div>
+
+
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Qué hace la familia cuando los niñ@s se portan mal? (Marque las respuestas):</label>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class=" option-group field">
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>No aplica</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Nada</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Diálogo</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Palmadas</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Regaños</label>
+
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Prohibición</label>
+
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Puños</label>
+
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Encierro</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+
+                                          <span class="checkbox"></span>Los ignora</label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+
+                                          <span class="checkbox"></span>Niega alimentos</label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+
+                                          <span class="checkbox"></span>Sin ropa</label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+
+                                          <span class="checkbox"></span>Los moja</label>
+                                       <br>
+                                       <br>
+                                       <div class="row">
+
+                                          <div class="col-md-2">
+                                             <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Otro</label>
+
+                                          </div>
+
+                                          <div class="col-md-3">
+
+                                             <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                             </label>
+                                          </div>
+
+                                       </div>
+
+
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-2">
+
+
+                                 </div>
+
+
+                              </div>
+
+
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Cómo es la relación de los adultos con los niños y niñas de la familia?:</label>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class=" option-group field">
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>No aplica</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Es indiferente </label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Las opiniones de los niños y las niñas son tenidas en cuenta</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Existe cuidado por parte de los padres </label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Es amorosa </label>
+                                       <br>
+                                       <br>
+                                       <div class="row">
+
+                                          <div class="col-md-2">
+                                             <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Otro</label>
+
+                                          </div>
+
+                                          <div class="col-md-3">
+
+                                             <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                             </label>
+                                          </div>
+
+                                       </div>
+
+
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-2">
+
+
+                                 </div>
+
+
+                              </div>
+
+
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Considera usted que el niño o la niña tiene oportunidades de recreación y esparcimiento en la comunidad?:</label>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class=" option-group field">
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Si</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>No</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>NS</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>NA</label>
+
+                                       <br>
+                                       <br>
+
+
+                                    </div>
+                                 </div>
+
+
+
+
+                              </div>
+
+
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-md-12">
+                           <div class="section">
+                              <label for="parentesco_encuestado" class="field-label">¿Cuáles considera usted son las oportunidades de recreación y esparcimiento con que cuenta el niño o la niña?:</label>
+                              <div class="row">
+                                 <div class="col-md-12">
+                                    <div class=" option-group field">
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Ir de paseo con sus padres</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Estar en casa de amigos</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Ver televisión</label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>El colegio</label>
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>La calle </label>
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Ir al parque</label>
+
+
+                                       <label class="checkbox-inline mt15 option option-primary">
+                                          <input type="checkbox" name="checked1">
+                                          <span class="checkbox"></span>Ir a fiesta</label>
+                                       <br>
+                                       <br>
+                                       <div class="row">
+
+                                          <div class="col-md-2">
+                                             <label class="checkbox-inline mt15 option option-primary">
+                                                <input type="checkbox" name="checked1">
+                                                <span class="checkbox"></span>Otros</label>
+
+                                          </div>
+
+                                          <div class="col-md-3">
+
+                                             <label for="parentesco_encuestado" class="field prepend-icon form-inline">
+                                                <input type="text" name="familia_vive" id="jefe_nacio1" class="gui-input" placeholder="¿Cual?">
+                                                <label for="parentesco_encuestado" class="field">
+
+                                                </label>
+                                             </label>
+                                          </div>
+
+                                       </div>
+
+
+                                    </div>
+                                 </div>
+
+                                 <div class="col-md-2">
+
+
+                                 </div>
+
+
+                              </div>
+
+
+                              <br>
+
+
+                           </div>
+
+                        </div>
+                     </div>
                   </section>
+
 
                   <h4 class="wizard-section-title">
                                 <i class="fa fa-user pr5"></i>VIOLENCIA INTRAFAMILIAR</h4>
@@ -1497,6 +2146,7 @@
 
    <!-- -------------- Theme Scripts -------------- -->
    <script src="js/utility/utility.js"></script>
+   <script src="js/plugins/moment/moment.min.js"></script>
    <script src="js/plugins/datepicker/js/bootstrap-datetimepicker.min.js"></script>
    <script src="js/main.js"></script>
    <script src="js/mi_main.js"></script>

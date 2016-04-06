@@ -6,10 +6,14 @@ body {
    background-size: cover;
 }
 
+input{
+   text-transform: capitalize;
+}
+
 .bg-login {
    background: #2E8E9E !important;
 }
 
-.steps
-   background: red !important;
+.wizard > div > ul >li >a {
+  background:#80DAE5;
 }
